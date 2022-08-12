@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+main {
+    min-height: 100vh;
+    padding: 0 8rem 5rem;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*GLOBAL STYLES START*/
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+/*GLOBAL STYLES END*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vector {
+    padding: 5px 7px;
+    background-color: #E5E7EB;
+    border-radius: 3px;
+}
+.hero-section{
+    margin-top: 5rem;
+    padding: 0 14rem;
+    text-align: center;
+}
+.greeting {
+    font-size: 1.25rem;
+}
+.hero-section .pablo{
+    margin-top: .5rem;
+    font-weight: 700;
+    font-size: 2.25rem;
+    
+}
+.about-section {
+    margin-top: 7rem;
+}
+.bio {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.bio .abt {
+    font-size: 1.25rem;
+}
+.bio .info {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.technology {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+.stack {
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.tool {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+.projects-section {
+    margin-top: 7rem;
+}
+.projects-section h5 {
+    text-align: center;
+    font-size: 1.25rem;
+}
+.works-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+}
+.gypsy {
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.mongo {
+    font-size: 1.25rem;
+}
+.lorem {
+    opacity: 0.5;
+    font-size: 1.125rem;
+}
+.works-img {
+    margin-top: 1rem;
+    background-color: #B4A9F6;
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.phone {
+    position: absolute;
+    right: 20rem;
+    bottom: .5rem;
+}
+.visit {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: #a0aba4;
+    padding: .55rem 1rem;
+    border-radius: 4px;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+.visit a {
+    color: #F5F5F5;
+    text-transform: uppercase;
+}
+.works .yellow {
+    background-color: #FBF6CC;
+}
+.works .green {
+    background-color: #BDF5D4;
+}
+.contacts-section {
+    margin-top: 7rem;
+    text-align: center;
+}
+.contacts-section p {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.contacts-section .say-hello {
+    border-bottom: 2px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+} 
