@@ -112,18 +112,20 @@ nav {
 .works-img {
     margin-top: 1rem;
     background-color: #B4A9F6;
-    padding: 2rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 1rem;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 7rem;
 }
 .images {
     position: relative;
+    margin-left: 8rem;
 }
 .phone {
     position: absolute;
-    right: -1rem;
+    right: -2rem;
     bottom: 0;
 }
 .visit {
@@ -133,9 +135,7 @@ nav {
     background-color: #a0aba4;
     padding: .55rem 1rem;
     border-radius: 4px;
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
+    margin-top: 10rem;
 }
 .visit a {
     color: #F5F5F5;
@@ -192,14 +192,21 @@ nav {
         margin-bottom: 1rem;
         width: 20rem;
     }
+    .works-img {
+        gap: 3rem;
+    }
+    .images {
+        margin-left: 3rem;
+    }
     .laptop {
         width: 10rem;
     }
     .phone {
         width: 3rem;
+        right: -.5rem;
     }
     .visit {
-        right: 3.5rem;
+        margin-top: 3rem;
     }
     .visit a {
         font-size: .8rem;
