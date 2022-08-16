@@ -45,7 +45,7 @@ nav {
 }
 .hero-section{
     margin-top: 5rem;
-    padding: 0 14rem;
+    padding: 0 10rem;
     text-align: center;
 }
 .greeting {
@@ -62,7 +62,7 @@ nav {
 }
 .bio {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 43% 1fr;
 }
 .bio .abt {
     font-size: 1.25rem;
@@ -117,12 +117,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.images {
     position: relative;
 }
 .phone {
     position: absolute;
-    right: 20rem;
-    bottom: .5rem;
+    right: -1rem;
+    bottom: 0;
 }
 .visit {
     display: flex;
@@ -169,3 +171,43 @@ nav {
     align-items: center;
     gap: .5rem;
 } 
+@media (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+    main {
+        padding: 0 4rem 3rem;
+    }
+    .hero-section  {
+        padding: 0;
+    }
+    .pablo {
+        font-size: 1rem;
+    }
+    .bio {
+        grid-template-columns: 1fr;
+        font-size: 1rem;
+    }
+    .bio img {
+        margin-bottom: 1rem;
+        width: 20rem;
+    }
+    .laptop {
+        width: 10rem;
+    }
+    .phone {
+        width: 3rem;
+    }
+    .visit {
+        right: 3.5rem;
+    }
+    .visit a {
+        font-size: .8rem;
+    }
+    .visit img, .contact-links img {
+        width: .5rem;
+    }
+    .contacts-section p{
+        font-size: .8rem;
+    }
+}
