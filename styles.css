@@ -36,7 +36,10 @@ header {
     font-size: 1.25rem;
     font-weight: 900;
     transition: all .5s ease-in-out;
-    color: navy;
+    color: darkblue;
+}
+.logo::first-letter{
+    color: orangered;
 }
 nav {
     display: flex;
@@ -140,23 +143,33 @@ nav .phone {
 /* END OF WORK SECTION */
 
 footer {
-    padding: .5rem 1rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     font-weight: 500;
     background-color: #0a0b0a;
+    min-height: 7rem;
 }
 footer p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color:#fff;
 }
 footer div {
     display: flex;
     gap: 1.5rem;
 }
+footer span {
+    color: orangered;
+}
 footer a {
-    color: #fff;
-    font-size: 1.25rem;
+    background-color: #fff;
+    color: darkblue;
+    font-size: 1rem;
+    padding: 0.15rem 0.5rem;
+    font-weight: 600;
+    border: 2px solid navy;
+    border-radius: .25rem;
 }
