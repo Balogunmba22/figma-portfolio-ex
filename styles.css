@@ -9,9 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    min-height: 3500px;
     transition: all 1s ease-in-out;
     font-family: roboto;
+    font-size: 1.2rem;
 }
 header {
     padding: .5rem 3rem;
@@ -21,7 +21,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: transparent;
+    background-color: white;
 }
 .logo {
     font-family: 'Courier New', Courier, monospace;
@@ -36,65 +36,19 @@ nav {
 }
 nav a{
     text-decoration: none;
-    font-size: 1.25rem;
     font-family: monospace;
-    font-style: italic;
     color: #000;
     text-transform: uppercase;
 }
 
-.hero-circle {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.5rem;
-    font-size: 1.25rem;
-    background: #2c2d36;
-    color: snow;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    animation: move 7s infinite;
-  }
+.hero {
+  padding: 0 10vw;
+  margin-top: 3rem;
+}
 
-  @keyframes move {
-    0% {
-      top: 3rem;
-      left: 18rem;
-      background: #2c2d36;
-      color: snow;
-    }
-    25% {
-      top: 3rem;
-      left: 50rem;
-      background: pink;
-      color: #000;
-    }
-    50% {
-      top: 20rem;
-      left: 50rem;
-      background: green;
-      color: snow;
-    }
-    75% {
-      top: 20rem;
-      left: 18rem;
-      background: #ebf9f4;
-      color: #000;
-    }
-    100% {
-      top: 3rem;
-      left: 18rem;
-      background: #2c2d36;
-      color: snow;
-    }
-  }
-
-  .about {
-    margin-top: 35rem;
-    padding: 0 7rem;
+.about {
+    margin-top: 4rem;
+    padding: 0 10vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +57,6 @@ nav a{
     max-width: 50%;
   }
   .about-text p {
-    font-size: 1.25rem;
     margin-top: 1rem;
   }
   .tools {
@@ -139,41 +92,8 @@ nav a{
     :root {
         font-size: 10px;
     }
-    .hero-circle{
-        margin: auto;
-        position: relative;
-    }
-    @keyframes move {
-        0% {
-          top: 3rem;
-          background: #2c2d36;
-          color: snow;
-        }
-        25% {
-          top: 3rem;
-          background: #ebf9f4;
-          color: #000;
-        }
-        50% {
-          top: 13rem;
-          background: #2c2d36;
-          color: snow;
-        }
-        75% {
-          top: 13rem;
-          background: #ebf9f4;
-          color: #000;
-        }
-        100% {
-          top: 3rem;
-          background: #2c2d36;
-          color: snow;
-        }
-      }
       .about{
         display: block;
-        margin-top: 16rem;
-        padding: 0 3rem;
       }
       .about-text {
         max-width: 100%;
