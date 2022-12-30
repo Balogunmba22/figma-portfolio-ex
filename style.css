@@ -5,52 +5,149 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
-  background-color: whitesmoke;
 }
 
 /* Global style(s) */
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #fff;
   font-size: 1rem;
 }
 
 /* Hero section */
 section.hero {
   height: 100vh;
-  background-color: #e9d5a1;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/media/safar-safarov-MSN8TFhJ0is-unsplash.jpg) center/cover fixed
+      no-repeat;
+  color: #fff;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+header {
+  text-align: right;
+  position: relative;
+}
+
+header img.menu_icon {
+  padding: 0.5rem;
+  background-color: black;
+}
+
+nav {
+  padding: 0.25rem 0.5rem;
+  width: fit-content;
+  background-color: black;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+nav a {
+  display: flex;
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+nav a:hover {
+  color: #fff;
+  opacity: 1;
+  filter: brightness(200%);
+}
+
+.hero-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  height: 100%;
+  margin: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Section */
+section.about {
+  min-height: 100vh;
+  color: #fff;
+  background-color: #494949;
+  padding: 2rem;
+  transition: all 2s ease-in-out;
+}
+
+.about .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about article {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  padding: 2rem 5vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about img {
+  width: 18rem;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.about .titles {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  transition: all 2s ease-in-out;
+}
+
+.about article .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all ease-in-out;
-}
-
-.hero img {
-  width: 10rem;
-}
-
-.hero h1 {
-  font-size: 2.25rem;
-  font-weight: 600;
-  font-family: "Playfair Display", serif;
-}
-
-.hero .titles {
-  font-size: 1.25rem;
+  gap: 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
-  letter-spacing: 2px;
-  margin-top: 0.5rem;
-  transition: all 2s ease-in-out;
+  background-color: black;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 1rem;
+  color: #fff;
 }
 
-.hero p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  font-weight: 500;
+/* Media Querie for Mobiles */
+@media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+  .about article {
+    display: block;
+    text-align: center;
+  }
+
+  .about .my_pic {
+    margin: 1rem 0 2rem;
+  }
 }
