@@ -30,99 +30,83 @@ section.hero {
   transition: all 2s ease-in-out;
 }
 
-header {
-  text-align: right;
-  position: relative;
-}
-
-header img.menu_icon {
-  padding: 0.5rem;
-  background-color: black;
-}
-
-nav {
-  padding: 0.25rem 0.5rem;
-  width: fit-content;
-  background-color: black;
-  border-radius: 5px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: none;
-}
-
-nav a {
-  display: flex;
-  padding: 0.25rem 0;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "Quicksand", sans-serif;
-  letter-spacing: 2px;
-  color: #fff;
-  opacity: 0.8;
-}
-
-nav a:hover {
-  color: #fff;
-  opacity: 1;
-  filter: brightness(200%);
-}
-
 .hero-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
   height: 100%;
   margin: 0 5vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  transition: all 2s ease-in-out;
+}
+
+.hero-text p:first-child {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero-text p:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* About Section */
 section.about {
   min-height: 100vh;
   color: #fff;
-  background-color: #494949;
-  padding: 2rem;
+  background-color: #6d6d6d;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
   transition: all 2s ease-in-out;
 }
 
-.about .heading {
+.about h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 2px;
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
 }
 
-.about article {
+.about-content {
+  flex: 1;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 1fr;
   align-items: center;
-  padding: 2rem 5vw;
+  padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+
+.about .img-container {
+  width: fit-content;
 }
 
 .about img {
-  width: 18rem;
+  width: 18.25rem;
   opacity: 0.8;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .about .titles {
   margin-top: 0.5rem;
-  font-weight: 500;
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0.25rem 0.5rem 0.5rem;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   transition: all 2s ease-in-out;
 }
 
-.about article .content {
+.about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,24 +114,147 @@ section.about {
   gap: 1rem;
   font-size: 1.125rem;
   font-weight: 500;
-  background-color: black;
-  border-radius: 5px;
-  height: fit-content;
   padding: 1rem;
   color: #fff;
+  background: #494949;
+  border-radius: 5px;
+}
+
+/* Project Section */
+section.project {
+  min-height: 100vh;
+  background-color: #5b5b5b;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: none 2s ease-in;
+}
+
+.project h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  flex: 1;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.my_project {
+  width: 30%;
+  cursor: pointer;
+  background-color: #6d6d6d;
+}
+
+.project img {
+  width: 100%;
+  height: 16rem;
+}
+
+.my_project:hover {
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+
+.project figcaption {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+section.contact {
+  min-height: 50vh;
+  background-color: #494949;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 2s ease;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  flex: 1;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icons img {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 /* Media Querie for Mobiles */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   :root {
     font-size: 12px;
   }
-  .about article {
-    display: block;
-    text-align: center;
+
+  section.about {
+    padding: 2rem 0.5vw;
   }
 
-  .about .my_pic {
-    margin: 1rem 0 2rem;
+  .about-content {
+    display: block;
+    text-align: center;
+    padding: 0 2vw;
+    margin-top: 2rem;
+  }
+
+  .about .img-container {
+    width: 100%;
+  }
+
+  .about-text {
+    margin-top: 2rem;
+  }
+
+  section.project {
+    padding: 2rem 0.5vw;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding: 0 2vw;
+  }
+
+  .my_project {
+    width: 100%;
+  }
+
+  .project figcaption {
+    padding: 0.8rem;
   }
 }

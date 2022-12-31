@@ -12,13 +12,3 @@ const setTitle = () => {
   titleEl.textContent = randomTitle();
 };
 console.log(setInterval(setTitle, 2000));
-
-// Manipulating the menu bar
-const menuBarEl = document.querySelector(".menu_icon");
-const navEl = document.querySelector("nav");
-
-menuBarEl.addEventListener("click", () => {
-  navEl.style.display = "block";
-});
-
-navEl.addEventListener("click", () => (navEl.style.display = "none"));

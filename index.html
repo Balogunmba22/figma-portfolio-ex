@@ -14,31 +14,24 @@
   <body>
     <!-- Hero -->
     <section class="hero">
-      <header>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <img src="/media/menu.svg" alt="menu bar" class="menu_icon" />
-      </header>
-      <p class="hero-text">
-        I design and develop experiences that makes people's lives easy!
-      </p>
+      <div class="hero-text">
+        <p>Hello, it's nice to meet you!</p>
+        <p>I design and develop experiences that makes people's lives easy.</p>
+      </div>
     </section>
 
     <!-- About -->
     <section class="about" id="about">
-      <h2 class="heading">About Me</h2>
-      <article>
-        <div class="my_pic">
+      <h2>About Me</h2>
+      <article class="about-content">
+        <div class="img-container">
           <img src="/media/my_pic.jpg" alt="My Photo" />
-          <p class="titles">
+          <figcaption class="titles">
             <!-- titles goes here -->
-          </p>
+          </figcaption>
         </div>
 
-        <div class="content">
+        <div class="about-text">
           <p>
             Hello, I am Muhammed Balogun. Ex Risk Manager transitioned into a
             Software Engineer. My area of specialty currently is Frontend
@@ -51,17 +44,67 @@
           </p>
           <p>
             At my free time, I love exploring and cooking different food
-            varieties, hitting the gym, and visit my friends.
+            varieties, hitting the gym, and visiting my friends.
           </p>
         </div>
       </article>
     </section>
 
     <!-- Project -->
-    <section class="project" id="project"></section>
+    <section class="project" id="project">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-container">
+        <div class="my_project one">
+          <a
+            href="https://unsplash-images-infinite-scroll.netlify.app"
+            target="_blank"
+          >
+            <img src="/media/infinity-scroll.png" alt="infinite scroll" />
+            <figcaption>Infinite Scroll Images</figcaption>
+          </a>
+        </div>
+
+        <div class="my_project two">
+          <a
+            href="https://resplendent-robo-friends.netlify.app"
+            target="_blank"
+          >
+            <img src="/media/royal-balon.png" alt="Robo-Friends" />
+            <figcaption>Robo-Friends</figcaption>
+          </a>
+        </div>
+
+        <div class="my_project three">
+          <a href="https://velvety-mochi-77dac9.netlify.app" target="_blank">
+            <img src="/media/cake-project (2).png" alt="E-commerce" />
+            <figcaption>E-commerce</figcaption>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <h2>Get in Touch</h2>
+      <p>
+        It will be nice to hear from you. Contact me on the following socials!
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/balogunmba0993/" target="_blank">
+          <img src="/media/linkedin.svg" alt="Linkedin" />
+        </a>
+        <a href="https://github.com/Balogunmba22" target="_blank">
+          <img src="/media/github.svg" alt="Github" />
+        </a>
+        <a href="https://twitter.com/balogunmba" target="_blank">
+          <img src="/media/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="#">
+          <img src="/media/email.svg" alt="Email" />
+        </a>
+      </div>
+    </section>
 
     <!-- Script -->
     <script src="/script.js"></script>
