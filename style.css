@@ -219,7 +219,8 @@ section.contact {
   }
 
   section.about {
-    padding: 4rem 0.5vw 0;
+    padding: 4rem 0.5vw;
+    min-height: fit-content;
   }
 
   .about-content {
@@ -234,8 +235,12 @@ section.contact {
   }
 
   .about-text {
-    margin-top: 5rem;
-    gap: 3rem;
+    margin-top: 4rem;
+    display: block;
+  }
+
+  .about-text p {
+    margin-top: 1.5rem;
   }
 
   section.project {
@@ -247,14 +252,14 @@ section.contact {
   }
 
   .projects-container {
-    flex-direction: column;
-    gap: 4rem;
+    display: block;
     margin-top: 2rem;
     padding: 0 2vw;
   }
 
   .my_project {
     width: 100%;
+    margin-top: 1.5rem;
   }
 
   .project figcaption {
@@ -263,9 +268,15 @@ section.contact {
 
   section.contact {
     padding: 4rem 0 0;
+    min-height: fit-content;
   }
 
   .social-icons {
-    gap: 4rem;
+    display: block;
+    text-align: center;
+  }
+
+  .social-icons a {
+    padding: 1rem;
   }
 }
