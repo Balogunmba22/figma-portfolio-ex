@@ -76,12 +76,12 @@ section.about {
 
 .about-content {
   flex: 1;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 35% 1fr;
   align-items: center;
   padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
-  margin-top: 1rem;
 }
 
 .about .img-container {
@@ -96,11 +96,9 @@ section.about {
 
 .about .titles {
   margin-top: 0.5rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  text-align: center;
-  padding: 0.25rem 0.5rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   transition: all 2s ease-in-out;
@@ -172,7 +170,7 @@ section.project {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-
+/* Contact Section */
 section.contact {
   min-height: 50vh;
   background-color: #494949;
@@ -221,14 +219,14 @@ section.contact {
   }
 
   section.about {
-    padding: 2rem 0.5vw;
+    padding: 4rem 0.5vw 0;
   }
 
   .about-content {
+    padding: 0 2vw;
+    margin-top: 4rem;
     display: block;
     text-align: center;
-    padding: 0 2vw;
-    margin-top: 2rem;
   }
 
   .about .img-container {
@@ -236,16 +234,21 @@ section.contact {
   }
 
   .about-text {
-    margin-top: 2rem;
+    margin-top: 5rem;
+    gap: 3rem;
   }
 
   section.project {
-    padding: 2rem 0.5vw;
+    padding: 4rem 0.5vw;
+  }
+
+  .my_project:hover {
+    transform: scale(1);
   }
 
   .projects-container {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4rem;
     margin-top: 2rem;
     padding: 0 2vw;
   }
@@ -256,5 +259,13 @@ section.contact {
 
   .project figcaption {
     padding: 0.8rem;
+  }
+
+  section.contact {
+    padding: 4rem 0 0;
+  }
+
+  .social-icons {
+    gap: 4rem;
   }
 }
