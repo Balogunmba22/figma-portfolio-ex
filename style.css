@@ -253,13 +253,13 @@ section.contact {
 
   .projects-container {
     display: block;
-    margin-top: 2rem;
+    margin-top: 0;
     padding: 0 2vw;
   }
 
   .my_project {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
   }
 
   .project figcaption {
@@ -267,13 +267,14 @@ section.contact {
   }
 
   section.contact {
-    padding: 4rem 0 0;
+    padding: 4rem 0;
     min-height: fit-content;
   }
 
   .social-icons {
     display: block;
     text-align: center;
+    margin-top: 2rem;
   }
 
   .social-icons a {
