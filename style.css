@@ -59,7 +59,7 @@ section.about {
   min-height: 100vh;
   color: #fff;
   background-color: #6d6d6d;
-  padding: 4rem 2rem;
+  padding: 4rem 7vw;
   display: flex;
   flex-direction: column;
   transition: all 2s ease-in-out;
@@ -80,7 +80,6 @@ section.about {
   display: grid;
   grid-template-columns: 35% 1fr;
   align-items: center;
-  padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -123,7 +122,7 @@ section.project {
   min-height: 100vh;
   background-color: #5b5b5b;
   color: #fff;
-  padding: 4rem 2rem;
+  padding: 4rem 7vw;
   display: flex;
   flex-direction: column;
   transition: none 2s ease-in;
@@ -144,7 +143,6 @@ section.project {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5vw;
 }
 
 .my_project {
@@ -172,12 +170,10 @@ section.project {
 }
 /* Contact Section */
 section.contact {
-  min-height: 50vh;
+  min-height: fit-content;
   background-color: #494949;
   color: #fff;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
+  padding: 4rem 2rem 3rem;
   transition: all 2s ease;
 }
 
@@ -198,12 +194,13 @@ section.contact {
 }
 
 .social-icons {
-  flex: 1;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
+
+.social-icons a {
+  padding: 1rem;
 }
 
 .social-icons img {
@@ -219,12 +216,11 @@ section.contact {
   }
 
   section.about {
-    padding: 4rem 0.5vw;
+    padding: 4rem 3vw;
     min-height: fit-content;
   }
 
   .about-content {
-    padding: 0 2vw;
     margin-top: 3rem;
     display: block;
     text-align: center;
@@ -237,6 +233,7 @@ section.contact {
   .about-text {
     margin-top: 3rem;
     display: block;
+    padding: 0 1rem 1rem;
   }
 
   .about-text p {
@@ -244,7 +241,7 @@ section.contact {
   }
 
   section.project {
-    padding: 4rem 0.5vw;
+    padding: 4rem 3vw;
   }
 
   .my_project:hover {
@@ -254,7 +251,6 @@ section.contact {
   .projects-container {
     display: block;
     margin-top: 0;
-    padding: 0 2vw;
   }
 
   .my_project {
@@ -267,17 +263,65 @@ section.contact {
   }
 
   section.contact {
-    padding: 4rem 0 2rem;
-    min-height: fit-content;
+    padding: 4rem 3vw 2rem;
   }
 
   .social-icons {
-    display: block;
-    text-align: center;
     margin-top: 2rem;
   }
+}
 
-  .social-icons a {
-    padding: 1rem;
+/* Media Queries for Tabs */
+@media (min-width: 641px) and (max-width: 853px) {
+  :root {
+    font-size: 13px;
+  }
+
+  section.about {
+    padding: 4rem 5vw;
+    min-height: fit-content;
+  }
+
+  .about-content {
+    margin-top: 3rem;
+    display: block;
+    text-align: center;
+  }
+
+  .about .img-container {
+    width: 100%;
+  }
+
+  .about-text {
+    margin-top: 3rem;
+    display: block;
+    padding: 0 1rem 1rem;
+  }
+
+  section.project {
+    padding: 4rem 5vw;
+  }
+
+  .projects-container {
+    flex-wrap: wrap;
+  }
+
+  .my_project {
+    width: 47%;
+  }
+}
+
+/* Media Queries for pc */
+@media (min-width: 854px) and (max-width: 1028px) {
+  :root {
+    font-size: 14px;
+  }
+
+  section.about {
+    padding: 4rem 3vw;
+  }
+
+  section.project {
+    padding: 4rem 3vw;
   }
 }
