@@ -233,7 +233,7 @@ section.contact {
   .about-text {
     margin-top: 3rem;
     display: block;
-    padding: 0 1rem 1rem;
+    padding: 0.25rem 1rem 1rem;
   }
 
   .about-text p {
@@ -295,7 +295,11 @@ section.contact {
   .about-text {
     margin-top: 3rem;
     display: block;
-    padding: 0 1rem 1rem;
+    padding: 0.25rem 1rem 1rem;
+  }
+
+  .about-text p {
+    margin-top: 1.5rem;
   }
 
   section.project {
