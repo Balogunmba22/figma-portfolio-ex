@@ -1,128 +1,200 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* CSS Resets */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Global styles */
 html {
   scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
+  color: #a8b2d1;
+  font-family: "Poppins", sans-serif;
+  background: #0a192f;
 }
 
-/* Global style(s) */
+.beautify {
+  color: #64ffda;
+}
+
 a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  color: #a8b2d1;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 9rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #0a192f;
+}
+
+header img.logo {
+  width: 5rem;
+  margin-left: -1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header a {
+  border-bottom: 2px solid transparent;
+}
+
+header a:hover {
+  border-bottom: 2px solid #64ffda;
 }
 
 /* Hero section */
-section.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(/media/safar-safarov-MSN8TFhJ0is-unsplash.jpg) center/cover fixed
-      no-repeat;
-  color: #fff;
-  overflow: hidden;
-  transition: all 2s ease-in-out;
+.hero {
+  margin-top: 2rem;
 }
 
-.hero-text {
-  height: 100%;
-  margin: 0 5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  transition: all 2s ease-in-out;
-}
-
-.hero-text p:first-child {
-  font-weight: 600;
-  font-size: 2rem;
+.hero-greeting {
+  color: #64ffda;
   letter-spacing: 2px;
-  font-family: "Quicksand", sans-serif;
+  padding-bottom: 1rem;
 }
 
-.hero-text p:nth-child(2) {
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* About Section */
-section.about {
-  min-height: 100vh;
-  color: #fff;
-  background-color: #6d6d6d;
-  padding: 4rem 7vw;
-  display: flex;
-  flex-direction: column;
-  transition: all 2s ease-in-out;
-}
-
-.about h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+.hero-name {
+  color: #e6f1ff;
+  font-size: 5rem;
+  font-weight: 800;
   letter-spacing: 2px;
 }
 
-.about-content {
-  flex: 1;
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 35% 1fr;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
+.hero-mainText {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-.about .img-container {
+.hero-subText {
+  font-size: 17px;
+  margin-top: 1.5rem;
+}
+
+.hero .mail {
+  display: block;
+  margin-top: 2.5rem;
+  padding: 1rem 1.75rem;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  background-color: inherit;
+  font-size: 16px;
+  border-radius: 3px;
+  letter-spacing: 2px;
   width: fit-content;
+  font-weight: 400;
 }
 
-.about img {
-  width: 18.25rem;
-  opacity: 0.8;
-  border-radius: 4px;
+.hero .mail:hover {
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-.about .titles {
-  margin-top: 0.5rem;
-  font-weight: 500;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  transition: all 2s ease-in-out;
+/* Social */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 55px;
 }
 
-.about-text {
+.social-icons span.line {
+  border-left: 1px solid #a8b2d1;
+  height: 100px;
+  margin-left: 9px;
+}
+
+/* Number */
+.phone-number_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 1.125rem;
+  position: fixed;
+  bottom: 0;
+  right: 55px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
-  padding: 1rem;
-  color: #fff;
-  background: #494949;
-  border-radius: 5px;
+  font-style: oblique;
+}
+
+/* About Section */
+.about h2 {
+  color: #e6f1ff;
+  font-weight: 600;
+}
+
+.about-content_wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-self: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.about-subText_conclusion,
+.technologies {
+  margin-top: 1rem;
+}
+
+.tech-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  gap: 5rem;
+  font-size: 14px;
+}
+
+.tech-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about img.my_pic {
+  width: 20rem;
+  border-radius: 3px;
+  /* filter: drop-shadow(5px -5px 2px #64ffda); */
+}
+
+.about .titles {
+  font-size: 1.2rem;
+  color: #64ffda;
+  margin-left: 42px;
 }
 
 /* Project Section */
-section.project {
+.project {
   min-height: 100vh;
-  background-color: #5b5b5b;
-  color: #fff;
-  padding: 4rem 7vw;
   display: flex;
   flex-direction: column;
   transition: none 2s ease-in;
@@ -169,10 +241,8 @@ section.project {
   font-weight: 500;
 }
 /* Contact Section */
-section.contact {
+.contact {
   min-height: fit-content;
-  background-color: #494949;
-  color: #fff;
   padding: 4rem 2rem 3rem;
   transition: all 2s ease;
 }
@@ -193,20 +263,16 @@ section.contact {
   margin-top: 2rem;
 }
 
-.social-icons {
-  margin-top: 2rem;
-  display: block;
-  text-align: center;
-}
-
-.social-icons a {
-  padding: 1rem;
-}
-
-.social-icons img {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 0.5rem;
-  border-radius: 50%;
+/* Key Frames for animation */
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #64ffda, 0 0 #64ffda, 0 0 #64ffda, 0 0 #64ffda, 0 0 #64ffda;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #64ffda, 2px -2px #64ffda, 3px -3px #64ffda;
+    transform: translateX(-8px) translateY(8px);
+  }
 }
 
 /* Media Querie for Mobiles */

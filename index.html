@@ -4,50 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Muhammed</title>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="/media/my_logo.png" />
     <link rel="stylesheet" href="/style.css" />
+    <title>Muhammed</title>
   </head>
   <body>
+    <header>
+      <img src="/media/my_logo.png" alt="logo" class="logo" />
+      <nav>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-text">
-        <p>Hello, it's nice to meet you!</p>
-        <p>I design and develop experiences that makes people's lives easy.</p>
+      <div>
+        <p class="hero-greeting">Hi there, I am</p>
+        <p class="hero-name">Muhammed,</p>
+        <p class="hero-mainText">I build things for the web.</p>
+        <p class="hero-subText">
+          I’m a software developer specializing in building (and occasionally
+          <br />
+          designing) exceptional digital experiences. I’m focused on creating
+          <br />
+          accessible, <span class="beautify">human-centered products</span> that
+          makes people's lives easy.
+        </p>
       </div>
+      <a href="https://wa.me/08070543678" class="mail">Message me!</a>
     </section>
+
+    <!-- Socials -->
+    <div class="social-icons">
+      <a href="https://github.com/Balogunmba22" target="_blank">
+        <img src="/media/github.svg" alt="Github" />
+      </a>
+      <a href="https://www.linkedin.com/in/balogunmba0993/" target="_blank">
+        <img src="/media/linkedin.svg" alt="Linkedin" />
+      </a>
+      <a href="https://twitter.com/balogunmba" target="_blank">
+        <img src="/media/twitter.svg" alt="Twitter" />
+      </a>
+      <a href="mailto:balogunmba22@gmail.com">
+        <img src="/media/email.svg" alt="Email" />
+      </a>
+      <span class="line"></span>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="phone-number_container">
+      <img src="/media/phone.svg" alt="..." />
+      <span class="number">
+        <!-- numbers goes in here -->
+      </span>
+    </div>
 
     <!-- About -->
     <section class="about" id="about">
-      <h2>About Me</h2>
-      <article class="about-content">
-        <div class="img-container">
-          <img src="/media/my_pic.jpg" alt="My Photo" />
+      <h2 class="about-headText">
+        <span><img src="/media/quill.svg" alt="..." /></span> About Me
+      </h2>
+      <main class="about-content_wrapper">
+        <div>
+          <p class="about-subText">
+            Hello! My name is Muhammed Balogun. I'm a Software developer with a
+            <span class="beautify">passion for Frontend development</span>. My
+            interest in Software development started back in 2020 when I decided
+            to try something new during the Corona Virus lockdown period. My
+            plan was to just learn a skill that would keep me engaged and get
+            over the boredom of not being able to move around — then I got
+            hooked due to what I can accomplish with HTML, CSS and JS. Since
+            then, I have never looked back. <br />
+            <br />I aspire toward a career that will allow me to channel my
+            thought processes into
+            <span class="beautify"
+              >crafting excellent software and beautiful experiences</span
+            >.
+          </p>
+          <p class="about-subText_conclusion">
+            When I'm not on the computer, I enjoy cooking, writing technical
+            articles, and visiting the gym.
+          </p>
+
+          <div class="technologies">
+            <p>Here are a few technologies I’ve been working with recently:</p>
+            <div class="tech-wrapper">
+              <p class="tech-grid">
+                <span>
+                  <span><img src="/media/arrow.svg" alt="..." /></span>
+                  <span>JavaScript</span></span
+                >
+                <span
+                  ><span><img src="/media/arrow.svg" alt="..." /></span
+                  ><span>React</span></span
+                >
+                <span
+                  ><span><img src="/media/arrow.svg" alt="..." /></span>
+                  <span>Tailwind</span></span
+                >
+              </p>
+              <p class="tech-grid">
+                <span
+                  ><span><img src="/media/arrow.svg" alt="..." /></span
+                  ><span>Typescript</span></span
+                >
+                <span
+                  ><span><img src="/media/arrow.svg" alt="..." /></span>
+                  <span>Vue</span></span
+                >
+                <span
+                  ><span><img src="/media/arrow.svg" alt="..." /></span
+                  ><span>Netifly</span></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Photo -->
+        <div class="photo-container">
+          <img src="/media/my_pic.png" alt="My Photo" class="my_pic" />
           <figcaption class="titles">
             <!-- titles goes here -->
           </figcaption>
         </div>
-
-        <div class="about-text">
-          <p>
-            I am Muhammed Balogun. Ex Risk Manager who transitioned into
-            Software Engineering. My area of specialty currently is Frontend
-            Development with React.js.
-          </p>
-          <p>
-            Coupled with the above, I am also a Technical Communicator. I enjoy
-            breaking-down complex coding concepts into simple understandable
-            pieces either through writing or classes.
-          </p>
-          <p>
-            At my free time, I love exploring and cooking different food
-            varieties, hitting the gym and brainstorming with my friends.
-          </p>
-        </div>
-      </article>
+      </main>
     </section>
 
     <!-- Project -->
@@ -90,20 +175,6 @@
       <p>
         It will be nice to hear from you. Contact me on the following socials!
       </p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/balogunmba0993/" target="_blank">
-          <img src="/media/linkedin.svg" alt="Linkedin" />
-        </a>
-        <a href="https://github.com/Balogunmba22" target="_blank">
-          <img src="/media/github.svg" alt="Github" />
-        </a>
-        <a href="https://twitter.com/balogunmba" target="_blank">
-          <img src="/media/twitter.svg" alt="Twitter" />
-        </a>
-        <a href="mailto:balogunmba22@gmail.com">
-          <img src="/media/email.svg" alt="Email" />
-        </a>
-      </div>
     </section>
 
     <!-- Script -->
