@@ -110,7 +110,7 @@ header a:hover {
   border: 1px solid #64ffda;
   color: #64ffda;
   background-color: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 3px;
   letter-spacing: 2px;
   width: fit-content;
@@ -271,7 +271,7 @@ header a:hover {
 .contact-headText {
   color: #64ffda;
   letter-spacing: 2px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .contact h2 {
@@ -320,7 +320,7 @@ footer {
   }
 
   body {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   section {
@@ -341,7 +341,7 @@ footer {
   }
 
   .hero-name {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .hero-mainText {
@@ -350,12 +350,15 @@ footer {
   }
 
   .hero-subText,
-  .whatsapp,
-  .mail,
   .about p,
   .project-subText,
   .contact-subText {
     font-size: 14px;
+  }
+
+  .whatsapp:hover,
+  .mail:hover {
+    display: none;
   }
 
   .about {
@@ -372,18 +375,22 @@ footer {
   }
 
   .about img.my_pic {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .tech-container {
     margin-top: 2.5rem;
-    grid-template-columns: repeat(3, 95px);
+    grid-template-columns: repeat(3, 97px);
     gap: 1rem;
   }
 
   .project-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
   }
 }
 
