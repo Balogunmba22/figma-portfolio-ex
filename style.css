@@ -110,7 +110,7 @@ header a:hover {
   border: 1px solid #64ffda;
   color: #64ffda;
   background-color: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   border-radius: 3px;
   letter-spacing: 2px;
@@ -320,6 +320,10 @@ footer {
     padding: 0 1.5rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
   section {
     padding: 0;
     min-height: fit-content;
@@ -353,10 +357,10 @@ footer {
     font-size: 14px;
   }
 
-  /* .whatsapp:hover,
-  .mail:hover {
-    display: none;
-  } */
+  .whatsapp,
+  .mail {
+    pointer-events: none;
+  }
 
   .about {
     margin-top: 11rem;
