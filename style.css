@@ -320,7 +320,7 @@ footer {
   }
 
   body {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 
   section {
@@ -333,7 +333,11 @@ footer {
   }
 
   header img.logo {
-    margin-left: -0.9rem;
+    margin-left: -1rem;
+  }
+
+  .hero {
+    margin-top: 4rem;
   }
 
   .hero-name {
@@ -346,6 +350,8 @@ footer {
   }
 
   .hero-subText,
+  .whatsapp,
+  .mail,
   .about p,
   .project-subText,
   .contact-subText {
@@ -353,7 +359,7 @@ footer {
   }
 
   .about {
-    margin-top: 8rem;
+    margin-top: 11rem;
   }
 
   .about .titles {
@@ -366,12 +372,13 @@ footer {
   }
 
   .about img.my_pic {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .tech-container {
     margin-top: 2.5rem;
-    grid-template-columns: repeat(3, 97px);
+    grid-template-columns: repeat(3, 95px);
+    gap: 1rem;
   }
 
   .project-container {
