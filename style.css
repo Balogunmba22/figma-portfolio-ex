@@ -35,6 +35,7 @@ a {
 h2 {
   color: #e6f1ff;
   font-weight: 600;
+  font-size: 3rem;
 }
 
 section {
@@ -105,12 +106,12 @@ header a:hover {
 .mail {
   display: block;
   margin-top: 2.5rem;
-  margin-left: 8px;
   padding: 1rem 1.75rem;
   border: 1px solid #64ffda;
   color: #64ffda;
   background-color: inherit;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 400;
   border-radius: 3px;
   letter-spacing: 2px;
   width: fit-content;
@@ -274,17 +275,13 @@ header a:hover {
   font-size: 16px;
 }
 
-.contact h2 {
-  font-size: 3.5rem;
-}
-
 .contact-subText {
   padding: 0 8vw;
   margin-top: 1rem;
   font-size: 17px;
 }
 
-.mail {
+.whatsapp {
   margin: auto;
   margin-top: 4rem;
 }
@@ -356,10 +353,10 @@ footer {
     font-size: 14px;
   }
 
-  .whatsapp:hover,
+  /* .whatsapp:hover,
   .mail:hover {
     display: none;
-  }
+  } */
 
   .about {
     margin-top: 11rem;

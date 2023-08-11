@@ -30,10 +30,14 @@
     <!-- Hero -->
     <section class="hero">
       <div>
-        <p class="hero-greeting">Hi there, I am</p>
-        <p class="hero-name">Muhammed,</p>
-        <p class="hero-mainText">I build things for the web.</p>
-        <p class="hero-subText">
+        <p class="hero-greeting" data-aos="zoom-in-right">Hi there, I am</p>
+        <p class="hero-name" data-aos="fade-right" data-aos-delay="400">
+          Muhammed,
+        </p>
+        <p class="hero-mainText" data-aos="fade-left" data-aos-delay="600">
+          I build things for the web.
+        </p>
+        <p class="hero-subText" data-aos="zoom-in-right" data-aos-delay="800">
           I’m a software developer specializing in building (and occasionally
           <br />
           designing) exceptional digital experiences. I’m focused on creating
@@ -42,7 +46,13 @@
           makes people's lives easy.
         </p>
       </div>
-      <a href="https://wa.me/08070543678" class="whatsapp">Message me!</a>
+      <a
+        href="mailto:balogunmba22@gmail.com"
+        class="mail"
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        >Drop a Message!</a
+      >
     </section>
 
     <!-- Socials -->
@@ -71,12 +81,12 @@
 
     <!-- About -->
     <section class="about" id="about">
-      <h2 class="about-headText">
+      <h2 class="about-headText" data-aos="zoom-in-left">
         <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
         Overview
       </h2>
       <main class="about-content_wrapper">
-        <div>
+        <div data-aos="zoom-in-right" data-aos-delay="600">
           <p class="about-subText">
             Hello! My name is Muhammed Balogun. I'm a Software developer with a
             <span class="beautify">passion for Frontend development</span>. My
@@ -117,7 +127,7 @@
         </div>
 
         <!-- My Photo -->
-        <div class="photo-container">
+        <div class="photo-container" data-aos="flip-left" data-aos-delay="600">
           <img src="/media/my_pic.png" alt="My Photo" class="my_pic" />
           <figcaption class="titles">
             <!-- titles goes here -->
@@ -128,11 +138,11 @@
 
     <!-- Project -->
     <section class="project" id="project">
-      <h2>
+      <h2 data-aos="zoom-in-left">
         <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
-        Some Things I’ve Built
+        Featured Projects
       </h2>
-      <p class="project-subText">
+      <p class="project-subText" data-aos="zoom-in-right" data-aos-delay="600">
         Following projects showcases my skills and experience through real-world
         examples of my work. Each project is briefly described with links to
         live demos. It reflects my ability to solve complex problems, work with
@@ -140,7 +150,7 @@
       </p>
 
       <div class="project-container">
-        <div class="card">
+        <div class="card" data-aos="fade-right" data-aos-delay="400">
           <img
             src="/media/getritch_restaurant.png"
             class="card-img-top"
@@ -149,7 +159,7 @@
           <div>
             <h5 class="card-title">Gericht Kitchen</h5>
             <p class="card-text">
-              A stunning restaurant landing page with beutiful design and
+              A modern restaurant landing page with beautiful design and
               excellent layout built with ReactJs and pure CSS.
             </p>
             <a
@@ -161,7 +171,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="800">
           <img
             src="/media/infinity-scroll.png"
             class="card-img-top"
@@ -182,7 +192,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-left" data-aos-delay="1200">
           <img src="/media/calculator.png" class="card-img-top" alt="..." />
           <div>
             <h5 class="card-title">Basic Calculator</h5>
@@ -203,18 +213,24 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-      <p class="contact-headText">
+      <p class="contact-headText" data-aos="zoom-in-right">
         <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
         What’s Next?
       </p>
-      <h2>Get In Touch</h2>
-      <p class="contact-subText">
+      <h2 data-aos="zoom-in-left" data-aos-delay="400">Get In Touch</h2>
+      <p class="contact-subText" data-aos="zoom-in-right" data-aos-delay="800">
         I’m always looking forward for new opportunities and how I can
         contribute my expertise to creating impactful web experiences. My inbox
         is always open, whether you have a gig or just want to say hi, I’ll try
         my best to get back to you!
       </p>
-      <a href="mailto:balogunmba22@gmail.com" class="mail">Say Hello</a>
+      <a
+        href="https://wa.me/08070543678"
+        class="whatsapp"
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        >Say Hello!</a
+      >
       <footer>
         <small>Built with love ❤️ in HTML, CSS, JavaSript and Boostrap</small>
         <br />
@@ -223,6 +239,7 @@
     </section>
 
     <!-- Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
