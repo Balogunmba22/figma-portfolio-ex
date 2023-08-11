@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/media/my_logo.png" />
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" href="/media/my_logo.png" />
+    <!-- Boostrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/style.css" />
     <title>Muhammed</title>
   </head>
@@ -35,7 +42,7 @@
           makes people's lives easy.
         </p>
       </div>
-      <a href="https://wa.me/08070543678" class="mail">Message me!</a>
+      <a href="https://wa.me/08070543678" class="whatsapp">Message me!</a>
     </section>
 
     <!-- Socials -->
@@ -56,17 +63,17 @@
     </div>
 
     <!-- Phone Number -->
-    <div class="phone-number_container">
+    <div class="number-container">
       <img src="/media/phone.svg" alt="..." />
-      <span class="number">
-        <!-- numbers goes in here -->
-      </span>
+      <small class="number"> 09025585492 </small>
+      <span class="line"></span>
     </div>
 
     <!-- About -->
     <section class="about" id="about">
       <h2 class="about-headText">
-        <span><img src="/media/quill.svg" alt="..." /></span> About Me
+        <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
+        Overview
       </h2>
       <main class="about-content_wrapper">
         <div>
@@ -90,39 +97,23 @@
             articles, and visiting the gym.
           </p>
 
-          <div class="technologies">
-            <p>Here are a few technologies I’ve been working with recently:</p>
-            <div class="tech-wrapper">
-              <p class="tech-grid">
-                <span>
-                  <span><img src="/media/arrow.svg" alt="..." /></span>
-                  <span>JavaScript</span></span
-                >
-                <span
-                  ><span><img src="/media/arrow.svg" alt="..." /></span
-                  ><span>React</span></span
-                >
-                <span
-                  ><span><img src="/media/arrow.svg" alt="..." /></span>
-                  <span>Tailwind</span></span
-                >
-              </p>
-              <p class="tech-grid">
-                <span
-                  ><span><img src="/media/arrow.svg" alt="..." /></span
-                  ><span>Typescript</span></span
-                >
-                <span
-                  ><span><img src="/media/arrow.svg" alt="..." /></span>
-                  <span>Vue</span></span
-                >
-                <span
-                  ><span><img src="/media/arrow.svg" alt="..." /></span
-                  ><span>Netifly</span></span
-                >
-              </p>
+          <article class="technologies">
+            <p>
+              Here are a few <span class="beautify">technologies</span> I’ve
+              been working with recently:
+            </p>
+            <div class="tech-container">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>ReactJs</span>
+              <span>TypeScript</span>
+              <span>Tailwind</span>
+              <span>VueJs</span>
+              <span>Boostrap</span>
+              <span>SASS</span>
             </div>
-          </div>
+          </article>
         </div>
 
         <!-- My Photo -->
@@ -137,44 +128,98 @@
 
     <!-- Project -->
     <section class="project" id="project">
-      <h2>Featured Projects</h2>
+      <h2>
+        <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
+        Some Things I’ve Built
+      </h2>
+      <p class="project-subText">
+        Following projects showcases my skills and experience through real-world
+        examples of my work. Each project is briefly described with links to
+        live demos. It reflects my ability to solve complex problems, work with
+        different technologies, and manage projects effectively.
+      </p>
 
-      <div class="projects-container">
-        <div class="my_project one">
-          <a
-            href="https://unsplash-images-infinite-scroll.netlify.app"
-            target="_blank"
-          >
-            <img src="/media/infinity-scroll.png" alt="infinite scroll" />
-            <figcaption>Infinite Scroll Images</figcaption>
-          </a>
+      <div class="project-container">
+        <div class="card">
+          <img
+            src="/media/getritch_restaurant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div>
+            <h5 class="card-title">Gericht Kitchen</h5>
+            <p class="card-text">
+              A stunning restaurant landing page with beutiful design and
+              excellent layout built with ReactJs and pure CSS.
+            </p>
+            <a
+              href="https://magnificent-restaurant.netlify.app/"
+              target="_blank"
+              class="btn"
+              >View Demo</a
+            >
+          </div>
         </div>
 
-        <div class="my_project two">
-          <a
-            href="https://resplendent-robo-friends.netlify.app"
-            target="_blank"
-          >
-            <img src="/media/royal-balon.png" alt="Robo-Friends" />
-            <figcaption>Robo-Friends</figcaption>
-          </a>
+        <div class="card">
+          <img
+            src="/media/infinity-scroll.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div>
+            <h5 class="card-title">Infinity Scroll</h5>
+            <p class="card-text">
+              A fun project that repeatedly calls the Unsplash Api and keeps
+              displaying imges while scrolling without ending.
+            </p>
+            <a
+              href="https://unsplash-images-infinite-scroll.netlify.app"
+              target="_blank"
+              class="btn"
+              >View Demo</a
+            >
+          </div>
         </div>
 
-        <div class="my_project three">
-          <a href="https://velvety-mochi-77dac9.netlify.app" target="_blank">
-            <img src="/media/cake-project (2).png" alt="E-commerce" />
-            <figcaption>E-commerce</figcaption>
-          </a>
+        <div class="card">
+          <img src="/media/calculator.png" class="card-img-top" alt="..." />
+          <div>
+            <h5 class="card-title">Basic Calculator</h5>
+            <p class="card-text">
+              A JS calculator that does basic arithmetic such as addition,
+              subtraction, multiplication and division.
+            </p>
+            <a
+              href="https://basic-calculator-mb.netlify.app/"
+              target="_blank"
+              class="btn"
+              >View Demo</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
-      <h2>Get in Touch</h2>
-      <p>
-        It will be nice to hear from you. Contact me on the following socials!
+      <p class="contact-headText">
+        <span><img src="/media/quill.svg" alt="..." class="quill-pen" /></span>
+        What’s Next?
       </p>
+      <h2>Get In Touch</h2>
+      <p class="contact-subText">
+        I’m always looking forward for new opportunities and how I can
+        contribute my expertise to creating impactful web experiences. My inbox
+        is always open, whether you have a gig or just want to say hi, I’ll try
+        my best to get back to you!
+      </p>
+      <a href="mailto:balogunmba22@gmail.com" class="mail">Say Hello</a>
+      <footer>
+        <small>Built with love ❤️ in HTML, CSS, JavaSript and Boostrap</small>
+        <br />
+        <small>Design inspired by Brittany Chiang's Portfolio Website 😍</small>
+      </footer>
     </section>
 
     <!-- Script -->
