@@ -106,11 +106,11 @@ header a:hover {
 .mail {
   display: block;
   margin-top: 2.5rem;
-  padding: 1rem 1.75rem;
+  padding: 16px 28px;
   border: 1px solid #64ffda;
   color: #64ffda;
   background-color: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   border-radius: 3px;
   letter-spacing: 2px;
@@ -360,6 +360,7 @@ footer {
   .whatsapp,
   .mail {
     pointer-events: none;
+    font-size: 14px;
   }
 
   .about {
