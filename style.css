@@ -116,11 +116,6 @@ header a:hover {
   width: fit-content;
 }
 
-.whatsapp:hover,
-.mail:hover {
-  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-}
-
 /* Social */
 .social-icons {
   display: flex;
@@ -358,7 +353,6 @@ footer {
 
   .whatsapp,
   .mail {
-    pointer-events: none;
     font-size: 14px;
   }
 
@@ -407,5 +401,24 @@ footer {
 @media (min-width: 854px) and (max-width: 1028px) {
   :root {
     font-size: 14px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .whatsapp:hover,
+  .mail:hover {
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  }
+
+  @keyframes shadow-pop-tr {
+    0% {
+      box-shadow: 0 0 #64ffda, 0 0 #64ffda, 0 0 #64ffda, 0 0 #64ffda,
+        0 0 #64ffda;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px -1px #64ffda, 2px -2px #64ffda, 3px -3px #64ffda;
+      transform: translateX(-8px) translateY(8px);
+    }
   }
 }
